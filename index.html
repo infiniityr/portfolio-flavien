@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <!-- Find usefull icons on : https://iconscout.com/unicons/explore/line -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Flavien ALONZO</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="uil uil-bag-alt nav__icon"></i> Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-graduation-cap nav__icon"></i> Skills
+                            </a>
+                        </li>
+                    </ul>
+
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.researchgate.net/profile/Flavien-Alonzo" target="_blank" class="home__social-icon">
+                                <i class="uil uil-edit"></i>
+                            </a>
+                            <a href="https://orcid.org/my-orcid?orcid=0000-0002-7972-3126" target="_blank" class="home__social-icon">
+                                <i class="uil uil-edit-alt"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/flavien-alonzo-ba1457173/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://hal.archives-ouvertes.fr/search/index/?q=flavien-alonzo&submit=&docType_s%5B%5D=ART&docType_s%5B%5D=COMM&docType_s%5B%5D=OUV&docType_s%5B%5D=COUV&docType_s%5B%5D=DOUV&docType_s%5B%5D=OTHER&docType_s%5B%5D=UNDEFINED&docType_s%5B%5D=REPORT&docType_s%5B%5D=THESE&docType_s%5B%5D=HDR&docType_s%5B%5D=LECTURE" target="_blank" class="home__social-icon">
+                                <i class="uil uil-book-open"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 366 295" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M348.189 116.58C431.199 296.287 201.33 305.883 76.0193 288.218C-69.714 267.641 28.0982 128.831 95.221 61.999C144.956 5.31496 265.179 -63.1265 348.189 116.58Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M348.189 116.58C431.199 296.287 201.33 305.883 76.0193 288.218C-69.714 267.641 28.0982 128.831 95.221 61.999C144.956 5.31496 265.179 -63.1265 348.189 116.58Z"/>
+                                    <image class="home__blob-img" x='30' href="./assets/img/profil.jpeg"/>
+                                </g>
+                            </svg>    
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Bonjour, ici Flavien ALONZO</h1>
+                            <h3 class="home__subtitle"><p>Doctorant en mathématiques appliquées à la santé</p>
+                            <p>Ingénieur généraliste, spécialisé en Bio-informatique et Mathématiques appliquées</p></h3>
+                            <p class="home__description">
+
+                            </p>
+                            <a href="#projects" class="button button--flex button__icon">
+                                Projects <i class="uil uil-arrow-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#qualification" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll me</span>
+                            <i class="uil uil-angle-double-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle"> </span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>
+                    </div>
+
+                    <div class="qualification_sections">
+                        <div class="qualification__content">
+                            <!--=============== Education 1 =================-->
+                            <div class="qualification__data">
+                                
+
+                                <div>
+                                    <h3 class="qualification__title">Doctorat Bio-mathématiques</h3>
+                                    <span class="qualification__subtitle">Nantes - Laboratoire de Mathématiques Jean Leray</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - Aujourd'hui
+                                    </div>
+                                    <div class="qualification__description">
+                                        <p>Directeur : Mazen Saad</p> 
+                                        <p>Co-Encadrant : Aurelien Serandour</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            
+                            <!--=============== Education 2 =================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Ingénieur généraliste</h3>
+                                    <span class="qualification__subtitle">Nantes - Ecole Centrale de Nantes</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2016 - 2019
+                                    </div>
+                                    <div class="qualification__description">
+                                        Spécialisation en Bioinformatique et Mathématiques appliquées.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <!--=============== Education 3 =================-->
+                            <div class="qualification__data">
+                                
+
+                                <div>
+                                    <h3 class="qualification__title">Prépa MPSI - MP</h3>
+                                    <span class="qualification__subtitle">Tours - Lycée Descartes</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014 - 2016
+                                    </div>
+                                    <div class="qualification__description">
+                                        
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            <!--=============== Education 4 =================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Baccalauréat Scientifique</h3>
+                                    <span class="qualification__subtitle">La Souterraine - Lycée Raymond Lœwy</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2014
+                                    </div>
+                                    <div class="qualification__description">
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification_sections">
+                        <div class="qualification__content">
+                            <!--=============== Work 1 =================-->
+                            <div class="qualification__data">
+                                
+
+                                <div>
+                                    <h3 class="qualification__title">Doctorat Bio-mathématiques</h3>
+                                    <span class="qualification__subtitle"><p>Nantes - Ecole Centrale de Nantes</p><p>Laboratoire de Mathématiques Jean Leray</p></span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - Aujourd'hui
+                                    </div>
+                                    <div class="qualification__description">
+                                        <p>Directeur : Mazen Saad</p> 
+                                        <p>Co-Encadrant : Aurelien Serandour</p>
+                                        <p>Sujet : Analyse analytique et numérique de systèmes d'équations paraboliques appliqués dans la modélisation des tumeurs gliales.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            
+                            <!--=============== Work 2 =================-->
+                            <div class="qualification__data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Stagiaire en recherche et développement</h3>
+                                    <span class="qualification__subtitle"><p>Zaragoza (Espagne) - Universidad de Zaragoza</p><p>Instituto Universitario de Investigacion en Ingenieria de Aragon</p></span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Avril 2019 - Septembre 2019
+                                    </div>
+                                    <div class="qualification__description">
+                                        <p>Encadrants : Elias Cuëto et Beatriz Moya</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <!--=============== Work 3 =================-->
+                            <div class="qualification__data">
+                                
+
+                                <div>
+                                    <h3 class="qualification__title">Stagiaire data scientist</h3>
+                                    <span class="qualification__subtitle">Clermont-Ferrand - Institut Pascal</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        avril 2018 - Août 2018
+                                    </div>
+                                    <div class="qualification__description">
+                                        Encadrants : Lemlih Ouchchane, Emmanuelle Abisset-Chavanne et Anaïs Barasinski
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Research Projects</h2>
+                <span class="section__subtitle"> </span>
+
+                <div class="projects__container container grid">
+                    <!--==================== PROJECT 1 ====================-->
+                    <div class="projects__content">
+                        <div>
+                            <i class="uil uil-head-side projects__icon"></i>
+                            <h3 class="projects__title">Simulating the behaviour of glioblastoma Multiforme based on patient MRI during treatments</h3>
+                            <img class="projects__image" src="./assets/img/projects/areas.png" alt="">
+                            <div class="projects__summary">
+                                <p>L'objectif de ce travail est la formulation d'un modèle, cohérent avec la biologie, autour de la croissance des cellules tumorales dans un Glioblastome Multiforme.</p>
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <span class="button button--flex button--small projects__button">
+                            En savoir plus
+                        </span>
+
+                        <div class="projects__modal">
+                            <div class="projects__modal-content">
+                                <h4 class="projects__modal-title"><p>Simulation du comportement du Glioblastome Multiforme à partir d'un IRM de patient pendant les traitements.</p>
+                                    <p>Simulating the behaviour of glioblastoma Multiforme based on patient MRI during treatments</p></h4>
+                                <i class="uil uil-times projects__icon projects__modal-close"></i>
+
+                                <div class="projects__modal-project">
+
+                                    <p>Glioblastoma Multiforme (GBM) is the deadliest and most frequent brain tumour. 
+                                    Despite the research of new treatments, patients still show poor prognosis in the long run: only 5% of patients survive 5 years post-prognosis. </p>
+                                        
+                                    <p>Usually, patients undergo emergency surgery (if the surgery is possible), then the treatment consists in radiotherapy plus concomitant and adjuvant Temozolomide (TMZ) therapy <a href="https://doi.org/10.1056/NEJMoa043330" target="_blank">(Stupp et al. 2005)</a>. 
+                                    More efficient therapies remain a major preoccupation to cure GBM, among them, immunotherapies is more and more a subject of research for gliomas and could improve the current prognosis of GBM patients.</p>
+                                        
+                                    <p>When a patient gets diagnosed with GBM, tumour cells have already achieved enough tumour promotion mechanisms in order to evade the immune system and to proliferate in the brain.
+                                    In that sense, we chose to model the GBM growth based on the process of tumour associated angiogenesis.</p>
+                                        
+                                    <!--<p>Angiogenesis is the ensemble of phenomenon that allow the formation of new blood vessels from pre-existing blood vessels. 
+                                    Those physiological processes happen not only for cancer patients, but tumours have the ability to use angiogenesis in their favor as a tumour promoter. 
+                                    Tumour cells rely on nutrients and O2 for their growth, provided by blood vessels. 
+                                    During tumour growth, the tumour core lacks O2 inducing hypoxia in the tumour core. 
+                                    Hypoxia prevents most tumour cellular activities, acting like a tumour suppressor process. 
+                                    To fight hypoxia, hypoxic tumour cells produce proangiogenic factors such as Vascular Endothelial Growth Factors (VEGF), that are the main factors produced in GBM. 
+                                    Proangiogenic factors promote angiogenesis meaning that more blood vessels are produced, and so more nutrients and $O_{2}$ are provided to the tumour cells. 
+                                    Angiogenesis mathematical models have already been developed: using PDEs <a href="https://doi.org/10.1098/rsif.2016.0918" target="_blank">(Vilanova et al. 2017)</a>, some adding stochastic parts in the modeling <a href="https://doi.org/10.1371/journal.pone.0019989" target="_blank">(Travasso et al. 2011)</a>, or working at a mesoscopic scale <a href="https://doi.org/10.1007/s00285-014-0771-1" target="_blank">(Spill et al. 2015)</a>.</p>
+                                   
+                                    <p>However in this work, we consider more realistic situation to the tumour associated angiogenesis model by working on Magnetic Resonance Imaging (MRIs) data based on a real patient and by modeling the behaviour of GBM growth through the treatments usually administered to patients.
+                                    Indeed MRIs are required to certify the diagnosis of GBM, and it is easier nowadays to get information from MRI as some deep learning techniques can be used to extract medical data. 
+                                    With numerical tools, it is possible to perform segmentation of GBM tumours based on MRI. 
+                                    Recent studies show also that information on the tumour cells behaviour can be acquired with immunohistochemistry data, for example by identifying GBM subtypes <a href="https://doi.org/10.1038/s41374-020-0437-0" target="_blank">(Orzan et al. 2020)</a> but we will not consider those different subtypes in this work.</p>
+                                         -->
+                                    <p>This results in a homogeneous zero-flux boundary conditions nonlinear system with 4 equations and 4 unknowns: the density of tumour cells (u), the O2 concentration (c), the density of endothelial  cells (u_e) and  the  vascular  endothelial  growth  factor  concentration (v)
+                                    \begin{align}
+                                    \label{Systa}\tag{1a}
+                                    &\partial_{t}u -\nabla\cdot(\Lambda_{1}(x)(a(u)\nabla u -\chi_{1}(u)\nabla c))  = \rho_{1}h(c)f_{u_{T}}(u)-\beta_{1}u -T_{treat}(t,u), \\
+                                    \label{Systb}\tag{1b}
+                                    &\partial_{t}c -\nabla\cdot(D_{2}\nabla c) = \alpha_{2}u_{e} -\beta_{2}c-\gamma_{2}uc, \\
+                                    \label{Systc}\tag{1c}
+                                    &\partial_{t}u_{e} - \nabla\cdot(\Lambda_{3}(x)(a(u_{e}) \nabla u_{e} -\chi_{3}(u_{e})\nabla v)) = \rho_{3}f_{u_{T}}(u_{e})-\beta_{3}u_{e}, \\
+                                    \label{Systd}\tag{1d}
+                                    &\partial_{t}v - \nabla\cdot(D_{4}\nabla v) = \alpha_{4}g(c)u -\beta_{4}v-\gamma_{4}u_{e}v.
+                                    \end{align}
+                                    Working on MRI is numerically challenging because on real MRI we can not have constrained mesh to solve our equations on. Finite volume scheme based on TPFA (Two Point Flux Approximation) can not ensure the positivity of numerical solutions.
+                                    It is then needed to use more sophisticated numerical schemes in order to ensure the positivity of the solutions.
+                                    Our approach is based on a CVFE (Control Volume Finite Element) scheme in which nonlinear numerical Gudonov fluxes are used to ensure the positivity.</p>
+                                        
+                                    <p>Using real patient data, it is interesting in the long run to include the treatments in the model to be able to match data and simulations. 
+                                    Currently patients with GBM are treated using surgery, chemotherapy with TMZ and radiotherapy, we will only consider those treatments in our model. 
+                                    Chemotherapy and surgery were first used in PDEs model around gliomas but more robust models have been developed: on chemotherapy with hypoxic cells <a href="https://doi.org/10.3934/mbe.2009.6.521" target="_blank">(Hinow et al. 2009)</a>, on surgery and radiotherapy with an haptotaxis model <a href="https://doi.org/10.1007/s10441-010-9111-z" target="_blank">(Enderling et al. 2010)</a> and even on immunotherapy in gliomas <a href="https://doi.org/10.1371/journal.pone.0123611" target="_blank">(Banerjee et al. 2015)</a>.
+                                    Choosing to model those treatments will allow us to compare their impact on the GBM growth through the recovery of a patient, and so, analyse their advantages and drawbacks on the tumour cells.</p>
+                                        
+                                    <p>Numerical simulations obtained are available following  <a href="https://www.youtube.com/watch?v=vJkMJ5bNoWA" target="_blank">this link</a>. The work related here is going under the publishing process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--==================== PROJECT 2 ====================-->
+                    <div class="projects__content">
+                        <div>
+                            <i class="uil uil-water projects__icon"></i>
+                            <h3 class="projects__title">Résolution de l'équation KdV</h3>
+                            <img class="projects__image" src="./assets/img/projects/KdV.png" alt="">
+                            <div class="projects__summary">
+                                Projet d’étude sur les équations de Korteweg de Vries, de Burger et d’Airy.
+                                Modélisation et analyse numérique des équations.
+                            </div>
+                        </div>
+
+                        <span class="button button--flex button--small projects__button">
+                            En savoir plus
+                        </span>
+
+                        <div class="projects__modal">
+                            <div class="projects__modal-content">
+                                <h4 class="projects__modal-title">Projet d’étude sur les équations de Korteweg de Vries, de Burger et d’Airy.
+                                    Modélisation et analyse numérique des équations.</h4>
+                                <i class="uil uil-times projects__icon projects__modal-close"></i>
+
+                                <div class="projects__modal-project">
+                                    <p>Ce projet d’étude de l’option mathématiques appliquées s’intéresse à la propagation d’un soliton
+                                    régi par l’équation Korteweg de Vries (KdV).</p>
+                                    <p>Le phénomène associé a été décrit pour la
+                                    première fois par l’Écossais John Scott Russell qui l’a observé initialement
+                                    en se promenant le long d’un canal : il a suivi pendant plusieurs
+                                    kilomètres une vague remontant le courant qui ne semblait pas vouloir
+                                    faiblir. Il a été modélisé par Joseph Boussinesq en 1872. Ainsi sur
+                                    l’eau, il est apparenté au mascaret. Il apparaît par exemple dans la
+                                    Seine ou sur la Dordogne, en Gironde, à certains endroits et à certains
+                                    moments. D’autres solitons apparaissent comme des ondes internes,
+                                    initiées par la topographie du fond marin, et qui se propagent dans la
+                                    pycnocline océanique.</p>
+                                    <p>Ce mode de propagation d’une vague sur de longues distances explique aussi la propagation des
+                                    tsunami (ou raz-de-marée). Ceux-ci se déplacent presque sans effet notable en eaux profondes. Le
+                                    transport par soliton explique que les tsunamis, insensibles pour les navires en mer, puissent naître
+                                    d’un séisme sur une côte de l’océan Pacifique et avoir des effets sur la côte opposée.</p>
+                                    <p>L’équation Korteweg de Vries s’écrit comme suit :
+                                        $$\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial x}+\frac{\partial^3u}{\partial x^3}=0$$
+                                        Cette équation est souvent vue comme une combinaison de deux équations aux dérivées partielles plus "faciles" à analyser :
+                                        $$\frac{\partial u}{\partial t}+u\frac{\partial u}{\partial x}=0$$
+                                        $$\frac{\partial u}{\partial t}+\frac{\partial^3u}{\partial x^3}=0$$
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 3 ====================-->
+                    <div class="projects__content">
+                        <div>
+                            <i class="uil uil-wind projects__icon"></i>
+                            <h3 class="projects__title">Gain de puissance d'une ferme éolienne selon l'incidence du vent</h3>
+                            <img class="projects__image" src="./assets/img/projects/opt.png" alt="">
+                            <div class="projects__summary">
+                                Projet R&D sur l’étude de l’impact d’une stratégie de contrôle de gestion d’une ferme éolienne sur
+                                sa production énergétique.
+                            </div>
+                        </div>
+
+                        <span class="button button--flex button--small projects__button">
+                            En savoir plus
+                        </span>
+
+                        <div class="projects__modal">
+                            <div class="projects__modal-content">
+                                <h4 class="projects__modal-title">Gain de puissance d'une ferme éolienne selon l'incidence du vent</h4>
+                                <i class="uil uil-times projects__icon projects__modal-close"></i>
+
+                                <div class="projects__modal-project">
+                                    <p>En se positionnant sur un concept qui, jusqu'à présent, a été largement négligé par les exploitants de parc éolien, Floris est un logiciel très prometteur.</p>
+
+                                    <p>Il propose en effet une stratégie de controle de groupe et non plus individuel comme ce qui se pratique aujourd'hui. En effet, en jouant sur le desaxement des éoliennes par rapport au vent, celles-ci produisent moins d'énergie mais ce choix permet de décaler leur sillage qui en conséquence gêne moins les éoliennes voisines. Floris prouve, par un jeu d'optimisation de ce paramètre de desaxement nommé yaw angle, qu'il serait possible de produire plus d'énergie.</p>
+
+                                    <p>A l'utilisation, Floris se révèle être simple pour toute personne qui serait déjà un peu familier du langage python. Par ailleurs, les modélisations du sillage utilisées se sont révélées être également simples à comprendre également. </p>
+
+                                    <p>Lors de l'analyse plus approfondie des capacités de Floris, nous avons découvert trois problèmes :
+                                    <ul><li>Le premier concerne la limite en vitesse incidente. Celle-ci se révèle être peu importante puisqu'avant d'être atteinte, Floris n'offre plus qu'un gain tout à fait négligeable.</li>
+                                    <li>La seconde implique la durée des calculs d'optimisation. En effet, pour une ferme de taille importante, si la gestion dynamique des moteurs en lacet implique une correction toutes les minutes, il faudra installer sur place un ordinateur puissant afin de résoudre les calculs dans le temps imparti.</li>
+                                    <li>Le dernier concerne cette anomalie dans le calcul du gain sur la ferme de Picardie. Autour de 4.78 m/s, Floris estime qu'il n'y a aucun gain à obtenir de cette configuration, ce qui est contredit par ses calculs à 4.5 m/s et 5.5 m/s.</li>
+                                    </ul></p>
+
+                                    <p>Malgré ces problèmes rencontrés, et comme en témoigne l'étude  \cite{Wes}, menée sur le terrain. Il a été prouvé sur une expérience de 10 mois, que les résultats de Floris étaient cohérents et très proches des valeurs mesurées.</p>
+
+                                    <p>Ainsi, après avoir travaillé sur ce projet pendant 6 mois, il nous apparait évident que les exploitants de parc éoliens doivent s'intéresser au potentiel de Floris. </p>
+
+                                    <p>Toutefois, il nous apparait important de noter qu'avant de pouvoir exploiter ce logiciel, des études de faisabilité à grande échelle sont encore nécessaires. En effet, comme vue sur l'étude \cite{WES}, le controle en dynamique est à améliorer. Par ailleurs, les organes moteur chargés de réaliser la rotation en lacet des éoliennes seront beaucoup plus solicités mécaniquement. A cet effet, nous souhaitons reparler ici du rapport de Megavind \cite{Megawind}. En effet, il met en lumière un élément crucial dans notre étude : les ruptures observées sur les éoliennes ne proviennent jamais d'un défaut mécanique lié au système d'entrainement en lacet. Il existe donc une certaine marge de manoeuvre quant à la résistance en usure de ces composants. </p>
+
+                                    <p>Les résultats annoncés par Floris sont donc une excellente nouvelle pour le secteur éolien. Il semble toutefois nécessaire d'effectuer de nouvelles études de faisabilité avant de pouvoir mettre en place à grande échelle les propositions de ce logiciel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 4 ====================-->
+                    <div class="projects__content">
+                        <div>
+                            <i class="uil uil-abacus projects__icon"></i>
+                            <h3 class="projects__title">Adaptative sloshing simulation using model reduction and GENERIC structure</h3>
+                            <img class="projects__image" src="./assets/img/projects/water.png" alt="">
+                            <div class="projects__summary">
+                                Projet R&D sur les méthodes de réduction de modèle pour le calcul en temps réel de comportement de fluides.
+                            </div>
+                        </div>
+
+                        <span class="button button--flex button--small projects__button">
+                            En savoir plus
+                        </span>
+
+                        <div class="projects__modal">
+                            <div class="projects__modal-content">
+                                <h4 class="projects__modal-title">Adaptative sloshing simulation using model reduction and GENERIC structure</h4>
+                                <i class="uil uil-times projects__icon projects__modal-close"></i>
+
+                                <div class="projects__modal-project">
+                                    <p>This work is the result of my third-year internship at the Instituto Universitario de Investigacion en Ingenieria de Aragon in the University of Zaragoza (Spain).</p>
+
+                                    <p>My work follows the one from a PhD student that works on the problematic to solve real-time sloshing problems, from the detection of initial data with a camera to its rendering. Her first paper \cite{sloshing} shows that a numerical scheme based on the GENERIC structure \cite{generic} is able to reproduce in real-time the sloshing behavior of water with data-driven fluid simulation. The data were obtained on Abaqus with the SPH method \cite{sph}. A poster resuming her work is available in the previous page.</p>
+
+                                    <p>My objectives were to enhance the simulations by adding more liquids, even non-Newtonian, and to change the method to simulate the data on Abaqus.</p>
+
+                                    <p>Finally, I have been able to simulate liquids behavior with the ALE-mesh \cite{ale} and to generalize the method to simulate non-Newtonian liquid behavior with it, to extract and convert the data obtained in those simulations to get the manifold of the data, to embed this manifold in a 2D space with a high fidelity of the structure of trajectory using the UMAP \cite{umap} method and to compute the GENERIC numerical scheme on those trajectories to reconstruct them from the initial time step with high accuracy compared with the initial data.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== PROJECT 5 ====================-->
+                    <div class="projects__content">
+                        <div>
+                            <i class="uil uil-baby-carriage projects__icon"></i>
+                            <h3 class="projects__title">Méthodes de Machine Learning appliquées à des données de périnatalité</h3>
+                            <img class="projects__image" src="./assets/img/projects/Dice_datas.png" alt="">
+                            <div class="projects__summary">
+                                L'objectif est de mettre en place différentes méthodes algorithmiques de Machine Learning pour effectuer une prédiction de variables liées à la morbidité à partir de données de périnatalité renseignées au cours de la grossesse pour pouvoir anticiper ces morbidités et adapter les soins au cours de la grossesse.
+                            </div>
+                        </div>
+
+                        <span class="button button--flex button--small projects__button">
+                            En savoir plus
+                        </span>
+
+                        <div class="projects__modal">
+                            <div class="projects__modal-content">
+                                <h4 class="projects__modal-title">Méthodes de Machine Learning appliquées à des données de périnatalité</h4>
+                                <i class="uil uil-times projects__icon projects__modal-close"></i>
+
+                                <div class="projects__modal-project">
+                                    <p>Cette collaboration Institut Pascal - Ecole Centrale de Nantes s'appuie sur les données disponibles au sein de PEPRADE (Périnatalité, grossesse, Environnement, PRAtiques médicales et DEveloppement) concernant une cohorte 
+                                    de suivis de (23 000) grossesses s'étalant sur la décennie en cours, avec de forts enjeux cliniques et de santé 
+                                    publique.</p>
+
+                                    <p>La typologie des données est très diverse incluant des données numériques structurées en bases, des données 
+                                    d'imagerie essentiellement échographiques, des signaux électrophysiologiques et des informations textuelles.
+                                    Ces  données  sont  massives  quant  à  leur  taille  car  elles  impliquent  plusieurs  individus  statistiques  
+                                    dont la parturiente, son conjoint, la grossesse en elle-même (depuis la conception jusqu'à l'accouchement, 
+                                    ses  conditions  et  son  environnement  médical),  le  ou  les  foetus  en  question,  ainsi  que  l'enfant  en  période  
+                                    néonatale.  L'objet  de  cette  collaboration  est  de  mettre  en  œuvre  l'ensemble  d'une  chaîne  de  traitement  de  
+                                    données  depuis  leur  extraction/préparation  jusqu'à  leur  exploitation  avec  un  focus  particulier  sur  quelques  
+                                    problématiques  cliniques  relatives  au  développement  staturo-pondéral  foetal,  et  à  la  morbidité  périnatale.  
+                                    Outre l'intégration des données, je propose la mise en oeuvre d'un catalogue quasi-complet de techniques 
+                                    de machine learning dédiées à l'exploitation de la valeur informationnelle de ces données périnatales dans le 
+                                    but de prédire/anticiper des issues telles que le poids de naissance d'un enfant, le caractère morbide de son 
+                                    développement staturo-pondéral (hypotrophie/macrosomie) et les conditions de sa naissance (accouchement 
+                                    compliqué, réanimation néonatale, etc).</p>
+
+                                    <p>Ces études montrent des résultats plus satisfaisants que ceux obtenus avec les méthodes actuelles et sont résumés sous-formes de diagramme pour pouvoir évaluer et comparer chaque modèle selon le jeu de données et la méthode de régression / classification utilisée. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <!-- SKILL 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-sigma skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Mathematics</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Toto</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__90"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tata</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tutu</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__20"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SKILL 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-sigma skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Mathematics</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Toto</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__90"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tata</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tutu</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__20"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SKILL 3 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-sigma skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Mathematics</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Toto</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__90"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tata</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__80"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tutu</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__20"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Flavien Alonzo</h1>
+                        <span class="footer__subtitle"></span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Link 1</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.researchgate.net/profile/Flavien-Alonzo" target="_blank" class="footer__social">
+                            <i class="uil uil-edit"></i>
+                        </a>
+                        <a href="https://orcid.org/my-orcid?orcid=0000-0002-7972-3126" target="_blank" class="footer__social">
+                            <i class="uil uil-edit-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/flavien-alonzo-ba1457173/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://hal.archives-ouvertes.fr/search/index/?q=flavien-alonzo&submit=&docType_s%5B%5D=ART&docType_s%5B%5D=COMM&docType_s%5B%5D=OUV&docType_s%5B%5D=COUV&docType_s%5B%5D=DOUV&docType_s%5B%5D=OTHER&docType_s%5B%5D=UNDEFINED&docType_s%5B%5D=REPORT&docType_s%5B%5D=THESE&docType_s%5B%5D=HDR&docType_s%5B%5D=LECTURE" target="_blank" class="footer__social">
+                            <i class="uil uil-book-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; Flavien Alonzo.</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src=""></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
