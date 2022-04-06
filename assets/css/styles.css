@@ -298,13 +298,40 @@ img {
     color: var(--first-color-alt);
 }
 
+.home__social-icon span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.icon {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(8%) saturate(6828%) hue-rotate(316deg) brightness(93%) contrast(89%);
+}
+
+.icon:hover {
+    filter: invert(51%) sepia(84%) saturate(329%) hue-rotate(352deg) brightness(97%) contrast(89%);
+}
+
+.researchgate {
+    background-image: url(../img/researchgate-logo.svg);
+}
+
+.orcid {
+    background-image: url(../img/orcid.svg);
+}
+
+.hal {
+    background-image: url(../img/hal_logo.svg);
+}
+
 .home__blob {
     width: 250px;
     fill: var(--first-color);
 }
 
 .home__blob-img {
-    width: 300px;
+    width: 100%;
 }
 
 .home__data {
@@ -978,7 +1005,7 @@ img {
         width: 370px;
     }
     .home__social {
-        transform: translateX(-20rem);
+        transform: translateX(-15rem);
     }
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
