@@ -26,22 +26,27 @@
                     <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
+                                <i class="uil uil-estate nav__icon"></i> Accueil
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#qualification" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon"></i> Historique
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#projects" class="nav__link">
-                                <i class="uil uil-bag-alt nav__icon"></i> Projects
+                                <i class="uil uil-bag-alt nav__icon"></i> Projets de recherche
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#articles" class="nav__link">
+                                <i class="uil uil-bag-alt nav__icon"></i> Liste des articles
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class="uil uil-graduation-cap nav__icon"></i> Skills
+                                <i class="uil uil-graduation-cap nav__icon"></i> Enseignements
                             </a>
                         </li>
                     </ul>
@@ -88,28 +93,38 @@
                                 </mask>
                                 <g mask="url(#mask0)">
                                     <path d="M348.189 116.58C431.199 296.287 201.33 305.883 76.0193 288.218C-69.714 267.641 28.0982 128.831 95.221 61.999C144.956 5.31496 265.179 -63.1265 348.189 116.58Z"/>
-                                    <image class="home__blob-img" x='30' href="./assets/img/profil.jpeg"/>
+                                    <image class="home__blob-img" x='0' href="./assets/img/profil2.png"/>
                                 </g>
                             </svg>    
                         </div>
 
                         <div class="home__data">
                             <h1 class="home__title">Bonjour, ici Flavien ALONZO</h1>
-                            <h3 class="home__subtitle"><p>Doctorant en mathématiques appliquées à la santé</p>
+                            <h3 class="home__subtitle"><p>Doctorant en mathématiques appliquées à la santé,</p>
                             <p>Ingénieur généraliste, spécialisé en Bio-informatique et Mathématiques appliquées</p></h3>
                             <p class="home__description">
 
                             </p>
-                            <a href="#projects" class="button button--flex button__icon">
-                                Projects <i class="uil uil-arrow-circle-right"></i>
+                            <a href="#qualification" class="button button--flex button__icon">
+                                Historique <i class="uil uil-arrow-circle-down"></i>
                             </a>
+                            <a href="#projects" class="button button--flex button__icon">
+                                Projets<i class="uil uil-arrow-circle-down"></i>
+                            </a>
+                            <a href="#articles" class="button button--flex button__icon">
+                                Articles <i class="uil uil-arrow-circle-down"></i>
+                            </a>
+                            <a href="#skills" class="button button--flex button__icon">
+                                Enseignements <i class="uil uil-arrow-circle-down"></i>
+                            </a>
+                            
                         </div>
                     </div>
 
                     <div class="home__scroll">
                         <a href="#qualification" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll me</span>
+                            <span class="home__scroll-name">Faire défiler</span>
                             <i class="uil uil-angle-double-down"></i>
                         </a>
                     </div>
@@ -118,7 +133,7 @@
 
             <!--==================== ABOUT ====================-->
             <section class="qualification section" id="qualification">
-                <h2 class="section__title">About Me</h2>
+                <h2 class="section__title">Historique</h2>
                 <span class="section__subtitle"> </span>
 
                 <div class="qualification__container container">
@@ -126,11 +141,6 @@
                         <div class="qualification__button button--flex">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
                             Education
-                        </div>
-                        
-                        <div class="qualification__button button--flex">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
                         </div>
                     </div>
 
@@ -228,6 +238,16 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="qualification__container container">
+                    <p style="margin-bottom:3cm;"></p>
+                    <div class="qualification__tabs">                        
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Emplois
+                        </div>
+                    </div>
 
                     <div class="qualification_sections">
                         <div class="qualification__content">
@@ -307,7 +327,7 @@
 
             <!--==================== PROJECTS ====================-->
             <section class="projects section" id="projects">
-                <h2 class="section__title">Research Projects</h2>
+                <h2 class="section__title">Projets de recherche</h2>
                 <span class="section__subtitle"> </span>
 
                 <div class="projects__container container grid">
@@ -315,12 +335,12 @@
                     <div class="projects__content">
                         <div>
                             <i class="uil uil-head-side projects__icon"></i>
-                            <h3 class="projects__title">Simulating the behaviour of glioblastoma Multiforme based on patient MRI during treatments</h3>
+                            <h3 class="projects__title">Simulation du comportement du Glioblastome Multiforme à partir d'IRM d'un patient</h3>
                             <img class="projects__image" src="./assets/img/projects/areas.png" alt="">
-                            <div class="projects__summary">
+                            <!--<div class="projects__summary">
                                 <p>L'objectif de ce travail est la formulation d'un modèle, cohérent avec la biologie, autour de la croissance des cellules tumorales dans un Glioblastome Multiforme.</p>
                                 <p></p>
-                            </div>
+                            </div>-->
                         </div>
 
                         <span class="button button--flex button--small projects__button">
@@ -330,7 +350,7 @@
                         <div class="projects__modal">
                             <div class="projects__modal-content">
                                 <h4 class="projects__modal-title"><p>Simulation du comportement du Glioblastome Multiforme à partir d'un IRM de patient pendant les traitements.</p>
-                                    <p>Simulating the behaviour of glioblastoma Multiforme based on patient MRI during treatments</p></h4>
+                                    </h4>
                                 <i class="uil uil-times projects__icon projects__modal-close"></i>
 
                                 <div class="projects__modal-project">
@@ -344,7 +364,7 @@
                                     <p>When a patient gets diagnosed with GBM, tumour cells have already achieved enough tumour promotion mechanisms in order to evade the immune system and to proliferate in the brain.
                                     In that sense, we chose to model the GBM growth based on the process of tumour associated angiogenesis.</p>
                                         
-                                    <!--<p>Angiogenesis is the ensemble of phenomenon that allow the formation of new blood vessels from pre-existing blood vessels. 
+                                    <p>Angiogenesis is the ensemble of phenomenon that allow the formation of new blood vessels from pre-existing blood vessels. 
                                     Those physiological processes happen not only for cancer patients, but tumours have the ability to use angiogenesis in their favor as a tumour promoter. 
                                     Tumour cells rely on nutrients and O2 for their growth, provided by blood vessels. 
                                     During tumour growth, the tumour core lacks O2 inducing hypoxia in the tumour core. 
@@ -357,7 +377,7 @@
                                     Indeed MRIs are required to certify the diagnosis of GBM, and it is easier nowadays to get information from MRI as some deep learning techniques can be used to extract medical data. 
                                     With numerical tools, it is possible to perform segmentation of GBM tumours based on MRI. 
                                     Recent studies show also that information on the tumour cells behaviour can be acquired with immunohistochemistry data, for example by identifying GBM subtypes <a href="https://doi.org/10.1038/s41374-020-0437-0" target="_blank">(Orzan et al. 2020)</a> but we will not consider those different subtypes in this work.</p>
-                                         -->
+                                    
                                     <p>This results in a homogeneous zero-flux boundary conditions nonlinear system with 4 equations and 4 unknowns: the density of tumour cells (u), the O2 concentration (c), the density of endothelial  cells (u_e) and  the  vascular  endothelial  growth  factor  concentration (v)
                                     \begin{align}
                                     \label{Systa}\tag{1a}
@@ -390,10 +410,10 @@
                             <i class="uil uil-water projects__icon"></i>
                             <h3 class="projects__title">Résolution de l'équation KdV</h3>
                             <img class="projects__image" src="./assets/img/projects/KdV.png" alt="">
-                            <div class="projects__summary">
+                            <!--<div class="projects__summary">
                                 Projet d’étude sur les équations de Korteweg de Vries, de Burger et d’Airy.
                                 Modélisation et analyse numérique des équations.
-                            </div>
+                            </div>-->
                         </div>
 
                         <span class="button button--flex button--small projects__button">
@@ -440,10 +460,10 @@
                             <i class="uil uil-wind projects__icon"></i>
                             <h3 class="projects__title">Gain de puissance d'une ferme éolienne selon l'incidence du vent</h3>
                             <img class="projects__image" src="./assets/img/projects/opt.png" alt="">
-                            <div class="projects__summary">
+                            <!--<div class="projects__summary">
                                 Projet R&D sur l’étude de l’impact d’une stratégie de contrôle de gestion d’une ferme éolienne sur
                                 sa production énergétique.
-                            </div>
+                            </div>-->
                         </div>
 
                         <span class="button button--flex button--small projects__button">
@@ -486,9 +506,9 @@
                             <i class="uil uil-abacus projects__icon"></i>
                             <h3 class="projects__title">Adaptative sloshing simulation using model reduction and GENERIC structure</h3>
                             <img class="projects__image" src="./assets/img/projects/water.png" alt="">
-                            <div class="projects__summary">
+                            <!--<div class="projects__summary">
                                 Projet R&D sur les méthodes de réduction de modèle pour le calcul en temps réel de comportement de fluides.
-                            </div>
+                            </div>-->
                         </div>
 
                         <span class="button button--flex button--small projects__button">
@@ -519,9 +539,9 @@
                             <i class="uil uil-baby-carriage projects__icon"></i>
                             <h3 class="projects__title">Méthodes de Machine Learning appliquées à des données de périnatalité</h3>
                             <img class="projects__image" src="./assets/img/projects/Dice_datas.png" alt="">
-                            <div class="projects__summary">
+                            <!--<div class="projects__summary">
                                 L'objectif est de mettre en place différentes méthodes algorithmiques de Machine Learning pour effectuer une prédiction de variables liées à la morbidité à partir de données de périnatalité renseignées au cours de la grossesse pour pouvoir anticiper ces morbidités et adapter les soins au cours de la grossesse.
-                            </div>
+                            </div>-->
                         </div>
 
                         <span class="button button--flex button--small projects__button">
@@ -562,10 +582,37 @@
                 </div>
             </section>
 
-            <!--==================== SKILLS ====================-->
+             <!--==================== Liste des articles ====================-->
+             <section class="skills section" id="articles">
+                <h2 class="section__title">Articles</h2>
+                <span class="section__subtitle"></span>
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-sigma skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Simulation the behaviour of Glioblastoma Multiforme based on patient MRI during treatments</h1>
+                            <span class="skills__subtitle">Journal of Mathematical Biology</span>
+
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Flavien Alonzo, Mazen Saad, Aurelien Serandour et al. Simulating the behaviour of Glioblastoma Multiforme based on patient MRI during treatments, 24 June 2021, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-654407/v1]</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+            <!--==================== Enseignements ====================-->
             <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
+                <h2 class="section__title">Enseignements</h2>
+                <span class="section__subtitle"></span>
 
                 <div class="skills__container container grid">
                     <!-- SKILL 1 -->
@@ -574,8 +621,8 @@
                             <i class="uil uil-sigma skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Mathematics</h1>
-                                <span class="skills__subtitle">More than 4 years</span>
+                                <h1 class="skills__title">(TD) Mathématiques pour l'ingénieur</h1>
+                                <span class="skills__subtitle">2019-2022</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -584,31 +631,32 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Toto</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90"></span>
+                                    <p class="skills__name">Introduction à l'analyse numérique - Méthodes directes de résolution de systèmes linéaires</p>
                                 </div>
                             </div>
-
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Tata</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80"></span>
+                                    <h3 class="skills__name">Méthodes itératives de résolution de systèmes linéaires et d'approximation de valeurs propres</h3>
                                 </div>
                             </div>
-
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Tutu</h3>
-                                    <span class="skills__number">20%</span>
+                                    <h3 class="skills__name">Optimisation avec ou sans contraintes</h3>
                                 </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__20"></span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Probabilités</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Statistiques</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Interpolation et approximation - Intégration numérique</h3>
                                 </div>
                             </div>
                         </div>
@@ -620,8 +668,8 @@
                             <i class="uil uil-sigma skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Mathematics</h1>
-                                <span class="skills__subtitle">More than 4 years</span>
+                                <h1 class="skills__title">(TP) Mathématiques pour l'ingénieur</h1>
+                                <span class="skills__subtitle">2019-2022</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -630,31 +678,27 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Toto</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90"></span>
+                                    <p class="skills__name">Initiation à Matlab - Equation de la chaleur 1D</p>
                                 </div>
                             </div>
-
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Tata</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80"></span>
+                                    <h3 class="skills__name">Résolution d'un système linéaire tridiagonal pas plusieurs méthodes (LU, Jacobi, Gauss-Seidel)</h3>
                                 </div>
                             </div>
-
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Tutu</h3>
-                                    <span class="skills__number">20%</span>
+                                    <h3 class="skills__name">Optimisation avec ou sans contraintes</h3>
                                 </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__20"></span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Lois usuelles - Convergence de suites de variables aléatoires</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Evaluation d'une proportion - Moindres carrés avec contraintes linéaires</h3>
                                 </div>
                             </div>
                         </div>
@@ -666,8 +710,8 @@
                             <i class="uil uil-sigma skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Mathematics</h1>
-                                <span class="skills__subtitle">More than 4 years</span>
+                                <h1 class="skills__title">(Projet) Projet Encadré option BioSTIC</h1>
+                                <span class="skills__subtitle">2020-2022</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -676,31 +720,7 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Toto</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__90"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Tata</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__80"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Tutu</h3>
-                                    <span class="skills__number">20%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__20"></span>
+                                    <h3 class="skills__name">Encadrement du projet annuel d'un groupe d'étudiants issu de l'option BioSTIC</h3>
                                 </div>
                             </div>
                         </div>
@@ -718,12 +738,6 @@
                         <h1 class="footer__title">Flavien Alonzo</h1>
                         <span class="footer__subtitle"></span>
                     </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Link 1</a>
-                        </li>
-                    </ul>
 
                     <div class="footer__socials">
                         <a href="https://www.researchgate.net/profile/Flavien-Alonzo" target="_blank" class="footer__social">
