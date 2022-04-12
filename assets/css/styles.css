@@ -313,6 +313,14 @@ img {
     filter: invert(51%) sepia(84%) saturate(329%) hue-rotate(352deg) brightness(97%) contrast(89%);
 }
 
+.icon_light {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.icon_light:hover {
+    filter: invert(92%) sepia(20%) saturate(742%) hue-rotate(318deg) brightness(101%) contrast(98%);
+}
+
 .researchgate {
     background-image: url(../img/researchgate-logo.svg);
 }
@@ -398,6 +406,7 @@ img {
 .button__icon {
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
+    margin-bottom: var(--mb-0-5);
     transition: .3s;
 }
 
@@ -438,7 +447,7 @@ img {
 
 .skills__icon,
 .skills__arrow {
-    font-size: 2rem;
+    font-size: var(--h2-font-size);
     color: var(--first-color);
 }
 
@@ -461,7 +470,7 @@ img {
 }
 
 .skills__list {
-    row-gap: 1.5rem;
+    row-gap: .2rem;
     padding-left: 2.7rem;
 }
 
@@ -472,7 +481,7 @@ img {
 }
 
 .skills__name {
-    font-size: var(--normal-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -648,7 +657,6 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
-    overflow-y: scroll;
 }
 
 .projects__modal-content {
@@ -656,6 +664,13 @@ img {
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: .5rem;
+    overflow-y: scroll;
+    
+    height: 75%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
 }
 
 .projects__modal-project {
@@ -663,6 +678,7 @@ img {
 }
 
 .projects__modal-title {
+    width: 95%;
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
@@ -745,6 +761,13 @@ img {
 
 .footer__social:hover {
     color: var(--first-color-lighter);
+}
+
+.footer__social span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
 }
 
 .footer__copy {
@@ -846,9 +869,6 @@ img {
     .projects__content {
         padding-right: 3.5rem;
     }
-    .projects__modal {
-        display: block;
-    }
 }
 /* For medium devices */
 
@@ -860,7 +880,6 @@ img {
         grid-column: initial;
     } */
 
-    .skills__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
