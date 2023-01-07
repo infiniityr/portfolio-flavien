@@ -612,8 +612,8 @@ img {
 }
 
 .projects__container {
-    grid-template-columns: repeat(var(--total-projects), minmax(320px, 1fr));
-    grid-template-rows: minmax(150px, 1fr);
+    grid-template-columns: repeat(var(--total-projects), 320px);
+    grid-template-rows: 1fr;
     overflow-x: auto;
     scroll-snap-type: x proximity;
     padding-bottom: 1rem;
@@ -1021,10 +1021,6 @@ img {
 
     .projects {
         width: 80%;
-    }
-
-    .projects__container {
-        grid-template-columns: repeat(var(--total-projects), calc(25% - 2rem * 2));
     }
 }
 
